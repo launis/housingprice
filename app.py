@@ -5,8 +5,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open("C:\\Users\\risto\\Documents\\GitHub\\Deploying-ML-on-Cloud\\lr_model.pkl", "rb"
-))
+model = pickle.load(open("lr_model.pkl", "rb"))
 
 
 @app.route('/')
